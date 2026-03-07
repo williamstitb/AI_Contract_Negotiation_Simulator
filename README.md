@@ -55,5 +55,8 @@ The interface is designed for high-speed iteration. Configure the parameters on 
 ## 🤖 Acknowledgments
 This project was developed with code assistance and debugging support from **Gemini 3.1 Pro**.
 
+## Contact
+Created by [William H. Ongseputra](https://www.linkedin.com/in/wongseputra/).
+
 ## 📄 License
 This project is licensed under the MIT License. Feel free to fork, modify, and improve!
