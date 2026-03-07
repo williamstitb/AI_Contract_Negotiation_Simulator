@@ -7,8 +7,8 @@ Because it runs entirely on your local machine using **Ollama**, your contract c
 ## ✨ Features
 * **100% Local & Private:** Powered by Ollama. Your sensitive contract clauses stay on your hard drive.
 * **Customizable Opponent Engine:** Define the AI's exact persona, tone, and organization.
-* **Strict Strategic Constraints:** Program the AI's underlying logic by setting its Win/Lose Interests, Situational Leverage, BATNA (Best Alternative to a Negotiated Agreement), and absolute Walk-Away Conditions.
-* **Focused Context:** Paste specific, problematic clauses to keep the AI highly responsive and focused on the exact terms in dispute.
+* **Strict Strategic Constraints:** Program the AI's underlying logic by setting its Interests, Situational Leverage, BATNA (Best Alternative to a Negotiated Agreement), and absolute Walk-Away Conditions.
+* **Lightweight & Fast:** Designed to use specific text snippets rather than heavy PDF files to ensure near-instant AI response times.
 
 ## 🛠️ Prerequisites
 Before running The Standoff, you need two things installed on your system:
@@ -24,7 +24,7 @@ pip install gradio ollama
 ```
 
 **2. Download the AI Model**
-This project uses **Llama 3.1 (8B)** by default, which requires about 5GB of storage and runs smoothly on standard laptops. Open your terminal and run:
+This project uses **Llama 3.1 (8B)** by default. Open your terminal and run:
 ```bash
 ollama run llama3.1:8b
 ```
@@ -35,19 +35,19 @@ ollama run llama3.1:8b
 If you are using JupyterLab or a Jupyter Notebook:
 1. Open the `.ipynb` file or paste the Python code into a new cell.
 2. Run the cell.
-3. The simulator will automatically launch in a new, dedicated tab in your default web browser (usually at `http://127.0.0.1:7860`).
+3. The simulator will automatically launch in a new browser tab (usually at `http://127.0.0.1:7860`).
 
 ## 🎯 How to Use
-The interface is split into two sections: **Configuration (Left)** and **The Arena (Right)**.
+The interface is designed for high-speed iteration. Configure the parameters on the left before entering the Arena on the right.
 
-1. **Engine & Contract:** Paste the exact text of the clauses you want to dispute. 
-2. **Personas:** Define who you are and who the AI is playing (e.g., "Harvard MBA, risk-averse").
-3. **Opponent's Constraints:** This is the secret sauce. Tell the AI what it actually wants behind the scenes. Define its BATNA and the strict Walk-Away conditions it must not compromise on.
-4. **Negotiate:** Type your opening move in the chat interface on the right and see if you can break the opponent's defenses.
+1. **Engine & Contract:** Paste the exact text of the clauses you want to dispute into the "Specific Clauses" box.
+2. **Personas:** Define who you are and who the AI is playing. Use the pre-filled "Toxic Client" scenario for a quick start!
+3. **Opponent's Constraints:** Define the AI's hidden agenda. Tell it why it has the upper hand (Leverage) and what it will do if you can't reach a deal (BATNA).
+4. **The Arena:** Type your opening move in the chat interface. The AI will respond based on its programmed personality and strategic limits.
 
 ## 🛑 Stopping the Application
-* **Close the App:** Interrupt the kernel in your Jupyter Notebook (click the "Stop" square).
-* **Free up RAM:** If you want to unload the AI model from your computer's memory, open your terminal and type:
+* **Close the App:** Interrupt the kernel in your Jupyter Notebook (click the "Stop" square icon).
+* **Free up RAM:** To immediately unload the AI model from your computer's memory, run this in your terminal:
   ```bash
   ollama stop llama3.1:8b
   ```
